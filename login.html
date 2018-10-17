@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Lowin</title>
+	<title>R2D2-HangarGame</title>
 	<link rel="stylesheet" href="auth.css">
+	<link rel="icon" type="image/png" href="assets/images/favicon.png" />
 </head>
 
 <body>
@@ -15,22 +16,28 @@
 		<div class="lowin-wrapper">
 			<div class="lowin-box lowin-login">
 				<div class="lowin-box-inner">
-					<form>
-						<p>Sign in to continue</p>
+					<form method="POST" action="admin.html">
+						<p>Inicia sesión para continuar</p>
 						<div class="lowin-group">
-							<label>Email <a href="#" class="login-back-link">Sign in?</a></label>
+							<label>Correo electrónico <a href="#" class="login-back-link">Registrarse?</a></label>
 							<input type="email" autocomplete="email" name="email" class="lowin-input">
 						</div>
 						<div class="lowin-group password-group">
-							<label>Password <a href="#" class="forgot-link">Forgot Password?</a></label>
+							<label>Contraseña <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a></label>
 							<input type="password" name="password" autocomplete="current-password" class="lowin-input">
 						</div>
-						<button class="lowin-btn login-btn">
-							Sign In
-						</button>
+						
+						<!--<button class="lowin-btn login-btn" >							
+							Iniciar sesión
+						</button>-->
+						<p>Inicia sesión</p>
+						<button class="lowin-btn">							
+							<a href="admin.html">Iniciar sesión</a>
+						</button>				
+						
 
 						<div class="text-foot">
-							Don't have an account? <a href="" class="register-link">Register</a>
+							¿No tienes una cuenta? <a href="" class="register-link">Registro</a>
 						</div>
 					</form>
 				</div>
@@ -39,40 +46,40 @@
 			<div class="lowin-box lowin-register">
 				<div class="lowin-box-inner">
 					<form>
-						<p>Let's create your account</p>
+						<p>Vamos a crear tu cuenta</p>
 						<div class="lowin-group">
-							<label>Name</label>
+							<label>Nombre</label>
 							<input type="text" name="name" autocomplete="name" class="lowin-input">
 						</div>
 						<div class="lowin-group">
-							<label>Email</label>
+							<label>Correo Electrónico</label>
 							<input type="email" autocomplete="email" name="email" class="lowin-input">
 						</div>
 						<div class="lowin-group">
-							<label>Password</label>
+							<label>Contraseña</label>
 							<input type="password" name="password" autocomplete="current-password" class="lowin-input">
 						</div>
 						<button class="lowin-btn">
-							Sign Up
+							Regístrate
 						</button>
 
 						<div class="text-foot">
-							Already have an account? <a href="" class="login-link">Login</a>
+							Ya tienes una cuenta? <a href="" class="login-link">Iniciar sesión</a>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 	
-		<footer class="lowin-footer">
-			Design By <a href="http://fb.me/itskodinger">@itskodinger</a>
+		<footer class="lowin-footer">			
+		Diseñado por <a href="index.html">@arturin.com</a>
 		</footer>
 	</div>
 
 	<script src="auth.js"></script>
 	<script>
 		Auth.init({
-			login_url: '#login',
+			login_url: '#login', 
 			forgot_url: '#forgot'
 		});
 	</script>

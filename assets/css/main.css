@@ -407,6 +407,9 @@ video {
 .about-header .intro{
 	background-image: url(../images/about-header.jpg);
 }
+.about-header .intro{
+	background-image: url(../images/admin-header.jpg);
+}
 .about .page-bgc{
 	padding-bottom: 0;
 }
